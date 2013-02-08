@@ -1,0 +1,71 @@
+    <ScrollView
+        	xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="First Picture"
+        			tools:context=".MainActivity" />
+    
+    			<ImageView 
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:contentDescription="Tools for Ipad App Icon"
+        			android:id="@+id/img1"/>
+    
+    			<TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="Second Picture"
+        			tools:context=".MainActivity" />
+    
+    			<ImageView 
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:contentDescription="Gmail Icon"
+        			android:id="@+id/img2"/>
+    
+    			<TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="Third Picture"
+        			tools:context=".MainActivity" />
+    
+    			<ImageView 
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:contentDescription="LinkedIn Icon"
+        			android:id="@+id/img3"/>
+    
+    			<TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="Fourth Picture"
+        			tools:context=".MainActivity" />
+    
+    			<ImageView 
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:contentDescription="Facebook Icon"
+        			android:id="@+id/img4"/>
+    
+    			<TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:text="Fifth Picture"
+        			tools:context=".MainActivity" />
+    
+    			<ImageView 
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:contentDescription="Android Icon"
+        			android:id="@+id/img5"/>
+            </LinearLayout>
+    </ScrollView>
