@@ -25,10 +25,13 @@ public final class R {
         public static final int img3=0x7f080002;
         public static final int img4=0x7f080003;
         public static final int img5=0x7f080004;
-        public static final int menu_settings=0x7f080005;
+        public static final int menu_settings=0x7f080007;
+        public static final int myGallery=0x7f080006;
+        public static final int mySelection=0x7f080005;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int gallery=0x7f030001;
     }
     public static final class menu {
         public static final int activity_main=0x7f070000;

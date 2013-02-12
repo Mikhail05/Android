@@ -11,7 +11,7 @@
                   <TextView
         			android:layout_width="wrap_content"
         			android:layout_height="wrap_content"
-        			android:text="First Picture"
+        			android:text="Tools for Ipad App Icon"
         			tools:context=".MainActivity" />
     
     			<ImageView 
@@ -23,7 +23,7 @@
     			<TextView
         			android:layout_width="wrap_content"
         			android:layout_height="wrap_content"
-        			android:text="Second Picture"
+        			android:text="Gmail Icon"
         			tools:context=".MainActivity" />
     
     			<ImageView 
@@ -35,7 +35,7 @@
     			<TextView
         			android:layout_width="wrap_content"
         			android:layout_height="wrap_content"
-        			android:text="Third Picture"
+        			android:text="LinkedIn Icon"
         			tools:context=".MainActivity" />
     
     			<ImageView 
@@ -47,7 +47,7 @@
     			<TextView
         			android:layout_width="wrap_content"
         			android:layout_height="wrap_content"
-        			android:text="Fourth Picture"
+        			android:text="Facebook Icon"
         			tools:context=".MainActivity" />
     
     			<ImageView 
@@ -59,7 +59,7 @@
     			<TextView
         			android:layout_width="wrap_content"
         			android:layout_height="wrap_content"
-        			android:text="Fifth Picture"
+        			android:text="Android Icon"
         			tools:context=".MainActivity" />
     
     			<ImageView 

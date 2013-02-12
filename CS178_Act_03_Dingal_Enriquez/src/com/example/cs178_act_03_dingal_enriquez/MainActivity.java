@@ -5,10 +5,10 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import android.os.Bundle;
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
-import android.view.Menu;
+import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 
 public class MainActivity extends Activity {
@@ -25,10 +25,10 @@ public class MainActivity extends Activity {
 	
 	public ImageView[] images = new ImageView[size];
 	
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
         images[0]=(ImageView) findViewById(R.id.img1);
         images[1]=(ImageView) findViewById(R.id.img2);
         images[2]=(ImageView) findViewById(R.id.img3);
@@ -36,25 +36,25 @@ public class MainActivity extends Activity {
         images[4]=(ImageView) findViewById(R.id.img5);
         for(int i = 0 ; i < size ; i++ ){
         	images[i].setTag(links[i]);
-        	new GetImages().execute(images[i]);
+        	new GetImages().execute(images[i]);       	
         }       	 
+}
+
+    public Drawable storeImage(String url, String saveFilename) {
+
+        try {
+            InputStream imageBuffer = (InputStream) this.fetch(url);
+            Drawable d = Drawable.createFromStream(imageBuffer, "src");
+            return d;
+        } catch(Exception e){
+       	 	Log.e("Error: ", e.getMessage());
+       	 	return null;	        	 
+        }
     }
-        
-	     Drawable ImageOperations(String url, String saveFilename) {
-	         try {
-	             InputStream inputStream = (InputStream) this.fetch(url);
-	             Drawable d = Drawable.createFromStream(inputStream, "src");
-	             return d;
-	         } catch (MalformedURLException e) {
-	             return null;
-	         } catch (IOException e) {
-	             return null;
-	         }
-	     }
-	     
-	     public Object fetch(String address) throws MalformedURLException,IOException {
-	         URL url = new URL(address);
-	         Object content = url.getContent();
-	         return content;
-	     }
+    
+    public Object fetch(String address) throws MalformedURLException,IOException {
+        URL url = new URL(address);
+        Object content = url.getContent();
+        return content;
+    }	
 }
