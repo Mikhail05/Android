@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl"
+    android:paddingBottom="5dp" >
+
+   <!-- <EditText
+        android:id="@+id/inputURL"
+        android:layout_width="260dp"
+        android:layout_height="45dp"/>  --> 
+    
+    <AutoCompleteTextView
+        android:hint="Input URL here..."
+        android:dropDownHeight="50dp"
+        android:id="@+id/filter"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/> 
+	
+    <Button
+        android:id="@+id/enterURL"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/filter"
+        android:onClick="queueDownload"
+        android:text="Start"
+        android:background="#777"
+        android:textSize="18sp"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/play"
+        android:visibility="invisible"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/pause"
+        android:visibility="invisible"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="5dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/btnStart"
+        android:visibility="invisible"
+        android:max="100" />
+    
+    <Button 
+        android:id="@+id/btnCancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@id/progressBar1"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="-40dp"
+        android:visibility="invisible"
+        android:background="@drawable/cancel_icon"/>
+
+    <TextView
+        android:id="@+id/fileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar1"
+        android:layout_toRightOf="@id/btnStart"
+        android:layout_marginLeft="7dp"
+        android:textSize="14sp"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileName"
+        android:layout_toRightOf="@id/btnStart"
+        android:layout_marginLeft="7dp"
+        android:textColor="#CCC" />
+    <TextView
+        android:id="@+id/fileSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/percent"
+        android:layout_toRightOf="@id/btnStart"
+        android:layout_marginLeft="7dp"
+        android:textColor="#CCC" />
+
+</RelativeLayout>
